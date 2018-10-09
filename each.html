@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+      
+    </head>
+<body>
+    
+   <!-- <button> Hello </button>  -->
+    <input type="button" value ="Hello">
+    <ul>
+    <li>google</li>
+    <li>oracle</li>
+    <li>twitter</li>
+    </ul>
+    
+    </body>
+  
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+  $(document).ready(function(){
+    $("input[type='button']").click(function(){
+        $("li").each(function(){
+            alert($(this).text())
+        });
+    });
+});   
+    </script> 
+</html>

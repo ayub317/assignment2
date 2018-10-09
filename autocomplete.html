@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    </head>
+<body>
+    
+    <h1>available cities in India</h1>
+
+   <div class="ui-widget">
+  <label for="tags">Choose your city </label>
+    
+  <input id="city" placeholder="enter city">
+    </div>
+    
+    </body>
+  
+ 
+  
+    <script>
+    $(function (){
+        var availablecities=[
+            "mumbai",
+            "chennai",
+            "banglore",
+            "bihar",				
+	        "Hyderabad",	 	
+	        "Ahmedabad",		
+	        "Chennai",		
+	        "Kolkata",		
+	        "Surat",	
+	        "Pune",		
+	        "Jaipur",	
+	        "Lucknow",	
+	        "Kanpur",		
+	        "Nagpur",	
+	        "Visakhapatnam",
+            "Indore",		
+	        "Thane",		
+	        "Bhopal",		
+	        "Pimpri-Chinchwad",		
+	        "Patna",		
+	        "Vadodara",		
+	        "Ghaziabad",
+	        "Ludhiana",  
+            ];
+        $("#city").autocomplete({
+            source: availablecities
+                   
+        });
+    });   
+    </script> 
+</html>
